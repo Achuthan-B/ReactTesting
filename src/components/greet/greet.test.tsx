@@ -7,7 +7,7 @@ test('Checking the presence of Hello', () => {
   expect(textElement).toBeInTheDocument();
 });
 
-test('Greeting with props', () => {
+test('Greeting with the props', () => {
   render(<Greet name='Achuthan' />);
   const textElement = screen.getByText(/hello Achuthan/i);
   expect(textElement).toBeInTheDocument();
